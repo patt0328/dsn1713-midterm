@@ -2,14 +2,30 @@
 
 /* Set custom variables here */
 
+:root{
+  --bs-primary: #2e483a;
+  --bs-primary-rgb: rgb(46 72 58);
+  --bs-light: #f6f3ed;
+  --body-bg: #F6F3ED;
+}
 
 
 
-
+.navbar{
+  background-color: var(--bs-primary) !important;
+} 
 .navbar-brand {
   color: #F6F3ED;
 }
+.nav-link{
+  color: gray;
+}
 
+
+
+.navbar-nav .nav-link.active{
+  color: var(--bs-light);
+}
 body {
   font-family: "Sarala", sans-serif;
 }
@@ -18,10 +34,15 @@ h1, h2, h3 {
   font-family: "Merriweather", serif;
 }
 
+.btn{
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+}
+
 #hero {
   height: 800px;
   background-color: #E4E6DB;
-  background-image: url(../images/hero-bg-img.png);
+  background-image: url(/images/hero-bg-img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31,6 +52,16 @@ h1, h2, h3 {
   height: 800px;
 }
 
+
+#smart-way img{
+  max-width: 100%;
+  height: auto;
+}
+
+#reviews{
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+}
 #cta {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
   background-repeat: no-repeat;
@@ -38,8 +69,17 @@ h1, h2, h3 {
   background-size: cover;
 }
 
+footer{
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+}
+
+#cta{
+  color: var(--bs-light);
+}
+
 #cta .d-flex {
-  height: 400px;
+  height: 400px;  
 }
 
 section:not(#hero):not(#cta){
